@@ -1,0 +1,126 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+  margin: 0 2.6rem;
+  margin-top: 3rem;
+}
+
+.section {
+  margin-top: 3.5rem;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 1.3rem;
+  width: calc(100% - 6rem);
+  height: calc(100vh - 10rem); /* Adjust height to fill the container */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  flex-grow: 1; /* Make textarea grow to fill available space */
+  width: 100%;
+  height: 100%; /* Ensure textarea takes full height of the section */
+  border: 1px solid #ced4da;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  resize: none; /* Disable resizing */
+}
+
+.btn-converter {
+  background-color: #5095f8;
+  border: 1px solid #5095f8;
+  color: #fff;
+  padding: 1rem;
+  width: 100%; /* Full width on smaller screens */
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-converter:hover {
+  background-color: #1971ec;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Header {
+    margin: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  .section {
+    margin-top: 2rem;
+    padding: 2rem; 
+    border-radius: 1rem;
+    width: calc(100% - 2rem); /* Adjust the width to fit within the screen */
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(100vh - 4rem); /* Adjust height to fit within the screen */
+  }
+
+  textarea {
+    height: 100%; /* Make textarea take full height */
+  }
+
+  .btn-converter {
+    width: 100%; /* Full width on smaller screens */
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+.sound {
+  width: 100%;
+  max-width: 300px; /* Adjust the max width as needed */
+  background-color: #f0f0f0; /* Light grey background */
+  border: 2px solid #007BFF; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding inside the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto; /* Center the element with margin */
+  font-family: 'Arial', sans-serif; /* Custom font */
+}
+
+.sound audio {
+  width: 100%;
+  outline: none; /* Remove default outline */
+}
+
+.sound::-webkit-media-controls-panel {
+  background-color: #007BFF; /* Blue background for controls */
+  border-radius: 10px; /* Rounded corners */
+  color: white; /* White text */
+}
+
+.sound::-webkit-media-controls-play-button,
+.sound::-webkit-media-controls-pause-button,
+.sound::-webkit-media-controls-mute-button,
+.sound::-webkit-media-controls-volume-slider {
+  filter: invert(1); /* Invert colors to match the theme */
+}
+
+.sound::-webkit-media-controls-timeline,
+.sound::-webkit-media-controls-current-time-display,
+.sound::-webkit-media-controls-time-remaining-display {
+  color: white; /* White text for timeline and time displays */
+}
+
