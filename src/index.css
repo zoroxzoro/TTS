@@ -185,6 +185,12 @@ audio {
   width: 100%;
 }
 
+.lang{
+  margin-bottom: -0.8rem;
+}
+.voice{
+  margin-bottom: -0.8rem;
+}
 /* Dark Mode Styles */
 .dark-mode {
   background-color: #121212;

@@ -93,6 +93,7 @@ const App = () => {
                     placeholder="Enter text to convert to speech"
                     className={darkMode ? 'textarea-dark' : 'textarea-light'}
                 />
+                <h4 className='lang'>Select Language</h4>
                 <select
                     value={language}
                     onChange={handleLanguageChange}
@@ -101,6 +102,7 @@ const App = () => {
                     <option value="en-US">English (US)</option>
                     <option value="en-IN">English (Indian)</option>
                 </select>
+                <h4 className='voice'>Select Voice</h4>
                 <select
                     value={voiceName}
                     onChange={(e) => setVoiceName(e.target.value)}
