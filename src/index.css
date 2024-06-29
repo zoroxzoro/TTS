@@ -1,3 +1,4 @@
+/* Default styles */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -30,6 +31,7 @@ body, html {
   height: calc(100vh - 10rem); /* Adjust height to fill the container */
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -56,6 +58,9 @@ textarea {
 
 .btn-converter:hover {
   background-color: #1971ec;
+}
+.img{
+  margin-top: 2rem;
 }
 
 /* Responsive Design */
@@ -85,6 +90,7 @@ textarea {
     font-size: 1rem;
   }
 }
+
 .sound {
   width: 100%;
   max-width: 300px; /* Adjust the max width as needed */
@@ -124,3 +130,145 @@ textarea {
   color: white; /* White text for timeline and time displays */
 }
 
+.language-select, .voice-select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  appearance: none;
+  cursor: pointer;
+}
+
+.language-select:focus, .voice-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn-converter {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-converter:hover {
+  background-color: #0056b3;
+}
+
+.btn-converter:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.loader {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.sound {
+  margin-top: 20px;
+  width: 80%;
+}
+
+audio {
+  width: 100%;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  margin-top: -3rem;
+}
+
+
+.dark-mode .section {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode .language-select, .dark-mode .voice-select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode .btn-converter {
+  background-color: #444;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.dark-mode .btn-converter:hover {
+  background-color: #555;
+}
+
+.dark-mode .loader {
+  color: #5095f8;
+}
+
+.dark-mode .sound {
+  background-color: #2c2c2c;
+  border: 2px solid #5095f8;
+}
+
+.dark-mode .sound audio {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #bbb;
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: #aaa;
+}
+
+.dark-mode-toggle {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #0056b3;
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #bbb;
+  color: #000;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: #aaa;
+}
